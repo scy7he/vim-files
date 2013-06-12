@@ -33,7 +33,7 @@ set backspace=indent,eol,start  " backspace through everything in insert mode
 set pastetoggle=<leader>pt      " "Set  to toggle paste on and off.
 
 "" Searching
-set hlsearch                    " highlight matches
+"set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
@@ -42,7 +42,8 @@ set wildmenu
 set wildignore+=*/.hg/*,*/.svn/*,*.swp,*.swo
 
 "" Editor window dressing
-colorscheme solarized
+colorscheme molokai
+"colorscheme solarized
 set t_Co=256                    " 256 colours
 set cursorline                  " Highlight current line
 set ruler                       " Show a ruler
@@ -51,9 +52,10 @@ set relativenumber              " Show lines numbers relative to where you are
 au InsertEnter * :set nu        " absolute line numbers in insert mode,
 au InsertLeave * :set rnu       " relative otherwise for easy movement
 set showmatch                   " Show matching brackets
-set guifont=Inconsolata:h18     "Set the font to Inconsolata at 18pt. (Yes, it's huge)
-set bg=dark                     " Dark background
-"set bg=light                    " Light background
+"set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+set guifont=Envy\ Code\ R\ 11
+"set bg=dark                     " Dark background
+set bg=light                    " Light background
 set listchars=tab:▸\ ,eol:¬,trail:⋅,extends:❯,precedes:❮ " Make the list chars less hideous (and more like textmate)
 set showbreak=↪
 
@@ -115,3 +117,4 @@ runtime! bundle_config/*.vim
 """ Highlight trailing whitespace
 "highlight TrailWhitespace ctermbg=red guibg=red
 "match TrailWhitespace /\s\+$\| \+\ze\t/
+let Powerline_symbols = 'fancy'
