@@ -56,7 +56,8 @@ set showmatch                   " Show matching brackets
 set guifont=Envy\ Code\ R\ 11
 "set bg=dark                     " Dark background
 set bg=light                    " Light background
-set listchars=tab:▸\ ,eol:¬,trail:⋅,extends:❯,precedes:❮ " Make the list chars less hideous (and more like textmate)
+"set listchars=tab:▸\ ,eol:¬,trail:⋅,extends:❯,precedes:❮ " Make the list chars less hideous (and more like textmate)
+set listchars=trail:␣,tab:›\ ,extends:>,precedes:<,nbsp:·
 set showbreak=↪
 
 function! CurDir()
